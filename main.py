@@ -20,6 +20,7 @@ except FileNotFoundError:
 
 
 chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--incognito")
 prefs = {"profile.default_content_setting_values.notifications": 2}
 chrome_options.add_experimental_option("prefs", prefs)
 
